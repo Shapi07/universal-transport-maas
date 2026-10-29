@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "OmniPass MaaS",
+    "slug": "omnipass-maas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}

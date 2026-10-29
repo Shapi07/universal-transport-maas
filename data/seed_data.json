@@ -1,0 +1,156 @@
+{
+  "users": [
+    {
+      "name": "Alice Smith",
+      "email": "alice@example.com",
+      "role": "passenger",
+      "phone": "+1-555-0101"
+    },
+    {
+      "name": "Bob Jones",
+      "email": "bob@example.com",
+      "role": "passenger",
+      "phone": "+1-555-0102"
+    },
+    {
+      "name": "Elena Rostova",
+      "email": "elena@example.com",
+      "role": "passenger",
+      "phone": "+1-555-0103"
+    },
+    {
+      "name": "Metro Transit Dispatcher",
+      "email": "operator@metro.org",
+      "role": "operator",
+      "phone": "+1-555-0200"
+    },
+    {
+      "name": "SwiftCab Fleet Dispatch",
+      "email": "dispatch@swiftcab.com",
+      "role": "operator",
+      "phone": "+1-555-0201"
+    },
+    {
+      "name": "Admin Support Specialist",
+      "email": "admin@maas.gov",
+      "role": "admin",
+      "phone": "+1-555-0300"
+    }
+  ],
+  "route_segments": [
+    {
+      "segment_code": "BUS-42",
+      "transport_type": "bus",
+      "operator_name": "City MetroBus",
+      "origin": "Suburbia Green Heights",
+      "destination": "Metro Central Station",
+      "dep_offset_minutes": 0,
+      "duration_minutes": 30,
+      "price": 3.50,
+      "capacity": 40,
+      "status": "scheduled",
+      "platform_or_vehicle": "Bay 4"
+    },
+    {
+      "segment_code": "TRN-101",
+      "transport_type": "train",
+      "operator_name": "MetroRail Rapid Express",
+      "origin": "Metro Central Station",
+      "destination": "Grand Financial Terminal",
+      "dep_offset_minutes": 40,
+      "duration_minutes": 35,
+      "price": 12.00,
+      "capacity": 220,
+      "status": "scheduled",
+      "platform_or_vehicle": "Platform 2B"
+    },
+    {
+      "segment_code": "TXI-88",
+      "transport_type": "taxi",
+      "operator_name": "SwiftCab On-Demand",
+      "origin": "Grand Financial Terminal",
+      "destination": "Innovation Tech Park",
+      "dep_offset_minutes": 85,
+      "duration_minutes": 25,
+      "price": 18.50,
+      "capacity": 4,
+      "status": "scheduled",
+      "platform_or_vehicle": "Toyota Camry #88 (Driver: Carlos M.)"
+    },
+    {
+      "segment_code": "BUS-15",
+      "transport_type": "bus",
+      "operator_name": "Northside Shuttle",
+      "origin": "Northwood Commons",
+      "destination": "Metro Central Station",
+      "dep_offset_minutes": 10,
+      "duration_minutes": 25,
+      "price": 2.75,
+      "capacity": 35,
+      "status": "scheduled",
+      "platform_or_vehicle": "Bay 1"
+    },
+    {
+      "segment_code": "TRN-204",
+      "transport_type": "train",
+      "operator_name": "InterCity Coastal Rail",
+      "origin": "Metro Central Station",
+      "destination": "Airport Intermodal Hub",
+      "dep_offset_minutes": 45,
+      "duration_minutes": 40,
+      "price": 15.00,
+      "capacity": 180,
+      "status": "scheduled",
+      "platform_or_vehicle": "Platform 5A"
+    },
+    {
+      "segment_code": "TXI-14",
+      "transport_type": "taxi",
+      "operator_name": "SwiftCab EcoFleet",
+      "origin": "Airport Intermodal Hub",
+      "destination": "Seaside Convention Center",
+      "dep_offset_minutes": 95,
+      "duration_minutes": 20,
+      "price": 16.00,
+      "capacity": 4,
+      "status": "scheduled",
+      "platform_or_vehicle": "Hyundai Ioniq #14 (Driver: Sarah K.)"
+    },
+    {
+      "segment_code": "BUS-99",
+      "transport_type": "bus",
+      "operator_name": "City MetroBus",
+      "origin": "Grand Financial Terminal",
+      "destination": "Innovation Tech Park",
+      "dep_offset_minutes": 90,
+      "duration_minutes": 35,
+      "price": 3.00,
+      "capacity": 45,
+      "status": "scheduled",
+      "platform_or_vehicle": "Bay 8"
+    }
+  ],
+  "sample_bookings": [
+    {
+      "booking_reference": "MAAS-2026-X892",
+      "user_email": "alice@example.com",
+      "segment_codes": ["BUS-42", "TRN-101", "TXI-88"],
+      "status": "confirmed",
+      "payment_status": "paid"
+    },
+    {
+      "booking_reference": "MAAS-2026-T404",
+      "user_email": "bob@example.com",
+      "segment_codes": ["TRN-101", "TXI-88"],
+      "status": "confirmed",
+      "payment_status": "paid"
+    },
+    {
+      "booking_reference": "MAAS-2026-A109",
+      "user_email": "elena@example.com",
+      "segment_codes": ["BUS-15", "TRN-204", "TXI-14"],
+      "status": "confirmed",
+      "payment_status": "paid"
+    }
+  ]
+}

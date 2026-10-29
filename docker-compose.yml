@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  maas-platform:
+    build: .
+    container_name: universal-transport-maas
+    ports:
+      - "8501:8501"
+    environment:
+      - DATABASE_URL=sqlite:///./data/transport_maas.db
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8501/_stcore/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
